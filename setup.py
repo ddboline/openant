@@ -49,11 +49,8 @@ def install_udev_rules(raise_exception):
         execute(udev_reload_rules, [], "Reloading udev rules")
         execute(udev_trigger, [], "Triggering udev rules")
     else:
-        msg = "You must have root privileges to install udev rules. Run \"sudo python setup.py udev_rules\""
-        if raise_exception:
-            raise OSError(msg)
-        else:
-            print(msg)
+        msg = "copy resources/ant-usb-sticks.rules to /etc/udev/rules.d"
+        print(msg)
 
 
 def check_root():
