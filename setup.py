@@ -89,7 +89,7 @@ except IOError:
     long_description = ''
 
 setup(name='openant',
-      version='0.3',
+      version='0.3.1',
 
       description='ANT and ANT-FS Python Library',
       long_description=long_description,
